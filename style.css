@@ -1,0 +1,1440 @@
+/*-----  CSS RESET  ------*/
+
+/* fonts */
+  /*font-family: 'Francois One', sans-serif; */
+  * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+
+  html {
+    scroll-behavior: smooth; /* this enables smooth scrolling between internal links */
+    overflow-x: hidden;  }
+
+  body {
+    font-family: 'Noto Sans HK', sans-serif;
+    color: rgb(120,120,125);
+    overflow-x: hidden;
+  }
+
+  li {
+    font-family: 'Noto Sans HK', sans-serif;
+    color: rgb(120,120,125);
+    font-weight: bolder;
+    font-size: 0.8rem;}
+
+  .logo img {max-width: 35%;}
+  .grow { transition: all .2s ease-in-out; }
+  .grow:hover { transform: scale(1.1);}
+
+  img {
+    max-width: 100%; /* this ensures images never break their container */
+    height: auto;
+    margin-bottom: -0.6%;
+  }
+  .mob-bg1 {
+    background-image: url(/images/candy3.jpg);
+    background-size: cover;
+    background-position: center;
+    min-height: 70vh;
+    padding-top: 6rem;}
+
+  .mob-img img {
+    background-size: cover;
+    background-position: center;
+    min-height: 70vh;}
+
+
+
+   /* this overrides the default padding and margin on gridlex elements */
+  [class*=grid] {   margin: 0;  }
+  [class*=col]  {   padding: 0; }
+
+  .behind {z-index: -1;
+  position: absolute;}
+
+  /* ------------- Utility Classes --------------  */
+
+  .left     {  text-align: left;     }
+  .right    {  text-align: right;    }
+  .centered {  text-align: center;   }
+
+  .padded   {  padding: 5%;    }
+  .padded-1 {  padding: 1rem;  }
+  .padded-2 {  padding: 2rem;  }
+  .padded-4 {  padding:5rem;   }
+  .padded-05 {padding: .5rem;}
+  .padded-10 {padding: 10%;}
+  .unique-padding {  padding: 1.1rem;  }
+  .padded-sides { padding: 0% 5% 0% 5%;}
+  .padded-right { padding: 0% 0% 0% 5%;}
+  .padded-top-left-bottom {padding: 5% 0% 5% 5%;}
+  .padded-bottom {padding-bottom: 5%;}
+  .padded-top {padding-top: 6%;}
+  .padded-top-2 {padding-top: 3%;}
+  .padded-top-left-right {padding: 5% 5% 0% 5%}
+  .padded-t-0 {padding-top: 0;}
+  .padded-50 {padding: 48%;}
+
+
+  .capped-width { width: 80%; margin: auto;}
+
+  .tall-50  {  min-height: 50vh;   }
+  .tall-100 {  min-height: 100vh;  }
+
+  .dark-bg      {  background-color: #c1b9ac;     }
+  .light-bg     {  background-color: #efe9db4d;  }
+  .featured-bg  {  background-color: #f3f3f3;       }
+  .bg-white     {  background-color: #fff;}
+  .bg-light-grey { background-color: #eeeeee;}
+  .bg-soft-pink {  background-color: #f2e7e3;}
+  .bg-dark-beige {background-color: #d9d5ca;}
+
+  .split-beige {background: linear-gradient(180deg,#fff 50%,#efe9db4d 50%);}
+  .split-beige-white {background: linear-gradient(180deg,#efe9db4d 50%,#fff 50%);}
+
+  .light-text   { color: white; }
+  .flex-flip:nth-child(2n){  flex-direction: row-reverse; }
+
+
+    /* unique page styles */
+    .apply h3 {
+      color: #766c5c;
+      text-shadow: 2px 2px 3px rgb(0 0 0 / 27%);}
+
+    .apply img {max-width: 5%;}
+  /* General typography */
+  h1 {
+    font-family: "Playfair Display", serif;
+    font-size: 3.5rem;
+    color: white;
+    font-weight: 300;
+    text-shadow: 4px 4px 5px rgba(0,0,0,0.5);}
+
+ .h1-meta h3 {
+   font-size: 1rem;
+   font-weight: bolder;
+   font-family: "Playfair Display", serif;
+   text-shadow: 1px 1px 4px rgb(0 0 0 / 50%);}
+
+    h4, h5, h6 {
+    font-family: "Playfair Display", serif;
+    color: #766c5b;
+    line-height: 1.5;
+    margin-bottom: 0.8rem;
+    font-weight: 100;
+    text-transform: lowercase;
+  }
+
+    h2, h3 {
+    line-height: 1;
+    margin-bottom: 0.8rem;
+    font-family: 'Manrope', sans-serif;
+    font-weight: lighter;
+    color: white;
+    letter-spacing: 1px;
+    text-shadow: 4px 4px 5px rgba(0,0,0,0.5);
+  }
+
+  .reg h3 {
+    color: #766c5b;
+    text-shadow: 0px 0px 0px rgba(0,0,0,0);}
+
+  h2  { font-size: 2rem;  }
+  h3  { font-size: 1.8rem;  }
+  h4 {font-size: 1.6rem;}
+  h5 {font-size: 1.2rem;}
+  h6 {font-size: 1rem;}
+
+  p   { font-size: 1rem;  }
+
+  .logo h2 {
+    font-size: 1rem;
+    padding-top: 0.8rem;}
+
+  p, ul {
+     margin-bottom: 0.8rem;
+  }
+
+  h3 .women {
+    font-weight: bolder;
+    text-shadow: 1px 1px 3px rgb(0 0 0 / 50%);}
+
+  a {color: #c1b9ac;
+  text-decoration: none;}
+
+  a:hover {color: #766c5b;}
+
+  .course a:hover {
+    color: white;
+    text-shadow: 2px 2px 2px rgba(0,0,0,0.5); }
+
+  .course h2 {
+    color: #766c5b;
+    font-size: 1.3rem;
+    font-family: "Playfair Display", serif;
+    text-shadow: 0px 0px 0px rgba(0,0,0,0);}
+
+  .font-bg {background-color: #ffffffa3;
+  padding-bottom: 0.8rem;}
+
+
+  /* this makes sure that the last element in any container doesn't have margin-bottom */
+  h2:last-child,
+  h3:last-child,
+  h4:last-child,
+  h5:last-child,
+  h6:last-child,
+  p:last-child {
+    margin-bottom:0;
+  }
+
+  hr { /* this is a line element */
+    border: none;
+    border-bottom: 1px solid;
+    width: 4rem;
+    margin-bottom: 1rem;
+    text-align: left;
+  }
+  .home hr {
+      border: none;
+      border-bottom: 1.5px solid;
+      width: 20%;
+      margin-bottom: 1rem;
+      text-align: center;
+      margin: 0% 40% 0% 40%;
+      color: #766c5b;}
+
+  .margin-neg {margin-bottom: -0.1%;}
+
+  .border-grey {
+    border: 1px solid grey;
+    padding: 5rem 3rem 5rem 3rem;}
+
+    .border-top-sides {
+  border: 1px solid grey;
+  padding: 5rem 3rem 0rem 3rem;}
+
+
+  .borders-top-bottom {
+    border-bottom: 1px solid;
+    border-top: 1px solid;
+    }
+
+  .border-bottom {
+    border-bottom: 1px solid;
+
+    }
+
+  .border-sides {
+    border-left: 1px solid;
+    border-right: 1px solid;
+  }
+
+  .border-top {border-top: 10px solid white;}
+  .margin-top {margin-top: 0.8rem;}
+  .margin {margin: 5%;}
+  .margin-2{margin: 6%;}
+  .margin-bottom {margin-bottom: 2%;}
+  /* ------- unique typography styles - adjust to suit your styles  --------- */
+
+
+
+  .bold1 {
+    font-size: 6rem;
+    font-weight: 100;
+    color: #faf8f4;
+    text-transform: uppercase;
+      }
+
+  .dream {
+    font-size: 1.8rem;
+    text-transform: none;
+  }
+
+  .dates{
+    font-family: 'Manrope', sans-serif;
+    font-size: 1.8rem;
+    text-transform: none;}
+  .strike-through {text-decoration: line-through;}
+
+  .price {
+    font-family: 'Manrope', sans-serif;
+    color: #766c5b;
+    font-size: 2rem;
+    text-shadow: 2px 2px 3px rgb(0 0 0 / 36%);}
+
+  .bird {font-size: 2.5rem;}
+
+  .bold {font-weight: bolder;}
+
+  .services {
+    padding: 0% 3% 0% 3%;
+    font-size: 0.9rem;}
+
+
+  p.emphasis {   /* typically added to paragraphs to make them a little bigger, could be a different font or color also */
+    font-size: 1.2rem;
+  }
+
+  /* Icons */
+
+  .far {        /* default styles for font awesome icons */
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+
+
+  /* ---------------  Button Styles  --------- */
+  /* We have created lots of different button styles, you probably don't need to have quite this many styles depending on your site */
+
+
+
+
+  .button,
+  .button-solid,
+  .button-inverted {
+    text-decoration: none;
+    color:  white;
+    border: 1px solid #c1b9ac;
+    padding: 0.6rem 2rem;
+    margin-top: 1rem;
+    display: inline-block;
+    text-transform: uppercase;
+    font-size: 1rem;
+    background-color: #c1b9ac;
+  }
+
+  .button-photography {  text-decoration: none;
+    border: 1px solid #c1b9ac;
+    padding: 0.4rem 1rem;
+    margin-top: 1rem;
+    display: inline-block;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    background-color: #c1b9ac;
+  }
+
+  .button-social-media {  text-decoration: none;
+    border: 1px solid #c1b9ac;
+    padding: 0.4rem 1rem;
+    margin-top: 1rem;
+    margin-bottom: 5%;
+    display: inline-block;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    background-color: #c1b9ac;
+  }
+
+  .button:hover {
+    background-color: transparent;
+    color: #848387;
+    border:#848387 solid 1px;
+  }
+  .button.inverted {   /* this is for a button on a dark background */
+    border: 2px solid white;
+    color: white;
+  }
+
+
+  .arrow { /* this is the arrow button */
+    font-size: 1.5rem;
+    display: inline-block;
+    text-align: center;
+    font-weight: 300;
+    line-height: 1.5rem;
+    min-width: 2.5rem;
+    padding: 0.5rem;
+    border-radius: 100%;
+    text-decoration: none;
+    margin-top: 0.5rem;
+    background-color: transparent;
+    color: #c1b9ac;
+    border:#c1b9ac solid 1px;
+  }
+
+    .arrow:hover {
+      color: white;
+      background-color: #c1b9ac;
+      border:#c1b9ac solid 1px;
+      transition: 0.5s;
+    }
+
+    form {
+  border: 3px solid #c1b9ac;
+}
+
+/* Full-width inputs */
+
+/* Center the avatar image inside this container */
+.imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+}
+
+/* Avatar image */
+img.avatar {
+  width: 40%;
+  border-radius: 50%;
+}
+
+/* Add padding to containers */
+.container {
+  padding: 16px;
+}
+
+/* The "Forgot password" text */
+span.psw {
+  float: right;
+  padding-top: 16px;
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+  span.psw {
+    display: block;
+    float: none;
+  }
+  .cancelbtn {
+    width: 100%;
+  }
+}
+
+
+  /* Headers and footers */
+
+  header {
+    background-color: #766c5c;
+    padding: 1% 2% 0% 2%;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+    box-shadow: 2px 3px 2px #35302bc9;
+  }
+
+  header a,
+  footer a,
+   nav a {
+    text-decoration: none;
+    color: inherit;
+    color: white;
+
+  }
+
+
+
+  header nav a,
+  .inline a {
+    display: inline-block;
+    padding: 0.5rem;
+  }
+
+  header nav a.emphasis {
+    /* padding: 0.5rem 2rem; */
+    background-color: white;
+    color: #766c5c;
+    border: 1px solid white;
+    border-radius: 2px;
+    margin: 0 0.5rem;
+
+  }
+
+  header nav a.emphasis:hover {
+    margin: 0 0.5rem;
+    border: 1px solid white;
+    border-radius: 2px;
+    color: white;
+    background-color: transparent;
+  }
+
+  .small-font{ font-size: 0.9rem}
+
+  nav a:hover {
+    text-shadow: 4px 4px 5px rgba(0,0,0,0.5);
+    color: white;
+
+  }
+
+  footer a:hover {
+    color: #e3dfd4;
+  }
+
+  .sub-footer a {
+    padding: 0% 2% 0% 2%;
+  }
+
+  /* Dropdown Header */
+
+
+  header .dropdown:hover .dropdown-menu {
+    display: block;
+    position: absolute;
+    top: 2rem;
+    right: -1rem;
+    background-color: whit
+  }
+
+  /* Fixed Header Option */
+
+  header.fixed {
+    position: fixed;
+    border-bottom: 1px solid;
+    top:0;
+    left:0;
+    right:0;
+    z-index: 10;
+    margin:0;
+    padding-top: 1%;
+    text-align: center;
+  }
+  .bump-for-header {
+    min-height: 4rem;
+  }
+
+  .side-bar {padding: 5% 5% 20% 5%;}
+  .side-bar a:hover {
+    color: #e3dfd4;
+    border-bottom: solid 1px #e3dfd4;}
+
+
+  /* Hamburger Menu */
+  .hamburger,
+  .mobile-menu {
+    display: none;
+  }
+
+  .hamburger {
+    top:0;
+    right:0;
+    z-index: 10;
+    font-size: 4rem;
+    padding:0% 1%;
+    border-radius: 0%;
+    margin: 3%;
+    position: fixed;
+
+  }
+
+  .active {
+    color: #2d1f14;
+  }
+
+  .menu-p {
+    color: white;
+    font-family: 'Dynalight', cursive;
+    font-size: 1.5rem;
+    border-bottom: 2px solid rgba(255,255,255,.7);
+    padding-top: 4rem;
+  }
+  .mobile-menu {
+    position: fixed;
+    top: 0;
+    right:0;
+    left:0;
+    bottom: 0;
+    background: linear-gradient(25deg,rgba(255,255,255,.9) 50%,rgba(217,213,204,.9) 50%);
+    padding: 30% 10% 10% 10%;
+    z-index: 10;
+  }
+  .mobile-menu .grow {
+    color: rgb(120,120,125);
+    padding: 1.2rem;
+    display: block;
+    text-decoration: none;
+    font-family: 'Manrope', sans-serif;
+    text-align: center;
+    font-size: 1.3rem;
+  }
+
+  .mobile-menu .emphasis {
+    color: rgb(120,120,125);
+    padding: 3%;
+    display: block;
+    text-decoration: none;
+    font-family: 'Manrope', sans-serif;
+    text-align: center;
+    border-radius: 2px;
+    border: 1px solid rgb(120,120,125);
+    font-size: 1.3rem;
+  }
+
+  .mobile-menu .emphasis:hover {
+    color: white;
+    padding: 3%;
+    display: block;
+    text-decoration: none;
+    font-family: "Playfair Display", serif;
+    text-align: center;
+    border-radius: 2px;
+    background-color:  rgb(120,120,125);
+    border: 1px solid rgb(120,120,125);
+
+
+  }
+
+  /* -- Footer -- */
+
+  footer .info {
+    padding-right: 3rem;
+  }
+
+  footer nav a {
+    display:block;
+  }
+
+  footer h3 {
+    font-size: 1.2rem;
+  }
+
+  .socials {font-size: 2rem;}
+
+  /* BANNERS */
+
+  .banner,
+  .banner-with-header {
+    background-image: url('/images/banner01.jpg');
+    background-size: cover;
+    background-position: bottom;
+    min-height: 80vh;
+  }
+
+  .banner2 {
+    background-image: url('/images/banner3.jpg');
+    background-size: cover;
+    background-position: top;
+    min-height: 80vh;
+  }
+  .banner3 {
+    background-image: url('/images/banner5.jpg');
+    background-size: cover;
+    background-position: bottom;
+    min-height: 80vh;
+  }
+
+
+  .banner-60 {
+    background-size: cover;
+    background-position: top;
+    min-height: 70vh;}
+
+  .service-banner {
+    background-size: contain;
+    background-position: top;
+    background-repeat: no-repeat;
+  }
+
+
+  .banner-with-header {
+    padding-top: 6rem;
+    min-height: 100vh;
+  }
+
+  .absolute-header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: 0;
+    background: none;
+  }
+
+  .banner-square {
+    background-color: #efe9db;
+    padding: 0% 5% 5% 5%;
+  }
+
+  .service-banner {
+    margin-bottom: -5rem;
+  }
+
+
+  .bg-image-safari {
+    background-image: url('/images/safari.jpg');
+    background-size: cover;
+    background-position: center;
+    min-height: 100%;
+    background-repeat: no-repeat;
+  }
+
+  .bg-image-beach {
+      background-image: url('/images/beach.png');
+    background-size: cover;
+    background-position: center;
+    min-height: 100%;
+    background-repeat: no-repeat;
+  }
+
+  .bg-mock-up1 {
+      background-image: url('/images/mockup1.jpg');
+    background-size: cover;
+    background-position: center;
+    min-height: 100%;
+    background-repeat: no-repeat;
+  }
+
+  .bg-mock-up2 {
+    background-image: url('/images/mockup2.jpg');
+    background-size: cover;
+    background-position: center;
+    min-height: 100%;
+    background-repeat: no-repeat;
+  }
+
+  .bg-mock-up3 {
+    background-image: url('/images/banner6.jpg');
+    background-size: cover;
+    background-position: center;
+    min-height: 100%;
+    background-repeat: no-repeat;
+  }
+
+
+  .bg-image-portfolio {
+    background-size: cover;
+    background-position: center;
+    background-color: #d3ccc2;
+    background-repeat: no-repeat;
+  }
+
+  .image-slider {overflow: hidden;}
+
+
+/* javascript */
+
+  .fadein {  opacity: 0;}
+  .fadeinone {  opacity: 0;}
+  .fadeintwo {  opacity: 0;}
+  .fadeinthree {  opacity: 0;}
+  .fadeinfour {  opacity: 0;}
+
+  .slideinright  {
+      margin-left: 100vw;
+      min-width:100%;
+      width: 100%;
+    }
+
+  .slideinleft {
+      margin-left: -100vw;
+      max-width:100%;
+  }
+
+  .mobile-review p {font-size: 0.5rem;
+  text-align: center;}
+
+  .review {text-decoration: none;
+  color: #c1b9ac;}
+
+
+  .review:hover {color: #d3ccc2;}
+
+  /* javascript end */
+
+  /* vertical text */
+
+.vertical {
+  transform: translateX(-50%) translateY(-50%) rotate(-90deg);
+    font-size: 1rem;
+    position: absolute;
+    white-space: nowrap;
+    top: 35rem;
+    left: 55%;
+
+    color: white;
+    border: white solid 1px;
+  }
+
+.vertical:hover {
+  color: #78787d;
+  border: #78787d solid 1px;
+  background-color: #efe9db;}
+
+  .landscape {padding: 20%;}
+
+
+
+  .border {border: solid white 10px;}
+  .border-top-right-bottom {
+      border-top: solid white 10px;
+      border-right: solid white 10px;
+      border-bottom: solid white 10px;
+  }
+  /* Hover grid */
+
+  .hover-container {
+    background-size: cover;
+    background-position: center;
+  }
+
+  .hover-overlay {
+    position: relative;
+    padding-bottom: 100%;
+    color: rgba(255, 255, 255, 0);
+    position: relative;
+    /* you only need to use relative + absolute if you want to determine the exact aspect ratio of the container */
+    transition: all 0.3s;
+  }
+
+  .hover-overlay:hover {
+    background-color: rgba(60, 60, 60, 0.7);
+    color: white;
+  }
+
+  .hover-inner {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+  }
+
+  .hover-inner p {
+    margin-bottom: 0;
+  }
+
+  /* ----- FORMS --------------------------- */
+
+/* fancy form */
+.textarea {
+    min-height: 6rem;}
+
+.v-light-bg {
+    background-color: #f8f6f4;}
+
+.capped-width {
+    max-width: 1100px;
+    margin: auto;}
+
+.relative {
+    position: relative;}
+
+.vertical-form-text {
+    transform: translateX(-50%) translateY(-50%) rotate(-90deg);
+    font-size: 3.5rem;
+    position: absolute;
+    white-space: nowrap;
+    top: 50%;
+    left: 50%;
+}
+.sm-bold {
+    font-size: 2.5rem;}
+
+.floating-input {
+      position: relative;
+      padding-top: 1rem;
+      margin-bottom: 2rem;
+    }
+
+    .enquiry input {
+      font-family: "Playfair Display", serif;
+    }
+
+    .input-text {
+        font-size: 1.2rem;
+        line-height: 1.2;
+        display: block;
+        margin: 0;
+        width: 100%;
+        border: none;
+        border-bottom: 2px solid #5f5a5a70;
+        transition: all .5s;
+        padding: .7rem 0 .5rem;
+        background-color: rgba(0,0,0,0);
+      font-family: "Playfair Display", serif;}
+
+  .input-label {
+    display: block;
+    position: absolute;
+    top: 0;
+    font-family: "Playfair Display", serif;
+    text-transform: uppercase;
+    font-size: .8rem;
+    letter-spacing: 1px;
+    color: #5a5a5a;   }
+
+  .enquiry textarea {
+      resize: none;}
+
+  .enquiry input {
+      font-family: "Playfair Display", serif;
+    }
+
+  .input-text:placeholder-shown+.input-label {
+    visibility: hidden;
+    z-index: -1;}
+
+    .enquiry input {
+    font-family: "Playfair Display", serif;
+}
+input[type=submit] {
+    width: auto;
+    display: block;
+}
+.button-solid {
+    background-color: #3c3c3c;
+    color: #fff;
+    border: 1px solid #3c3c3c;
+    padding: .8rem 2rem .6rem;
+}
+
+.button-solid:focus {
+  background-color: transparent;
+  color: #3c3c3c;
+  border: 1px solid #3c3c3c;}
+
+  .button-solid:hover {
+    background-color: transparent;
+    color: #3c3c3c;
+    border: 1px solid #3c3c3c;}
+
+element.style {display: none;
+}
+
+.enquiry input {
+    font-family: "Playfair Display", serif;}
+
+  input,
+  textarea {
+    border-style: solid;
+    border: 2px solid rgb(200, 200, 205);
+    padding: 0.8em;
+    display: block;
+    width: 100%;
+    font-size: 1rem;
+    vertical-align: top;
+  }
+  .input-text:focus {
+  border-color:  #efe9db;}
+
+  input:focus, textarea:focus {
+    outline: 0;
+    border: 2x solid #fff;}
+
+    /* featured color
+
+
+  textarea {
+    min-height: 7em;
+  } */
+
+  input[type="submit"] {
+    width: auto;
+    display: block;
+  }
+
+  form [class*=col-] {
+    padding: 5px;
+  }
+
+  .email-signup input {
+    width: 30%;
+    display: inline-block;
+    max-width: 250px;
+    margin-top:1rem;
+  }
+
+  .email-signup .button-solid {
+    padding: 0.8em;
+    border-radius: 0;
+    font-size: 1rem;
+  }
+   form .button {
+     width:100%;
+   }
+
+   @media(max-width:768px) {
+     .email-signup input {
+       width: 100%;
+       max-width: 100%;
+     }
+   }
+
+  /* Testimomnials */
+
+  .card {
+    padding: 2rem;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.2), 0 10px 10px -5px rgba(0, 0, 0, 0.2);
+  }
+
+  .profile {
+    max-width: 8rem;
+    border-radius: 100%;
+    margin-bottom: 2rem;
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.2), 0 10px 10px -5px rgba(0, 0, 0, 0.2);
+  }
+
+  .card .author {
+    font-weight: bold;
+    margin-bottom:0;
+  }
+
+  .card .company {
+    margin-bottom: 2rem;
+  }
+
+  /* clickable boxes */
+
+  .clickable-box {
+    color: inherit;
+    text-decoration: none;
+    box-shadow: 0 rgba(0, 0, 0, 0); /* so that we can add a transition */
+    transition: 0.2s all;
+    display: block;
+  }
+
+  .clickable-box .overlay {
+    min-height:10rem;
+    padding: 5rem 2rem;
+    background-color: rgba(0,0,10,0.6);
+    color: white;
+  }
+
+  .clickable-box p {
+    margin-bottom: 0;
+  }
+
+  .clickable-box:hover {
+    box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.4), 0 10px 20px -5px rgba(0, 0, 0, 0.4);
+    margin-top:-2px;
+  }
+
+
+
+/* fancybox gallery */
+.mixed-gallery .landscape {
+    padding-bottom: 75%;}
+
+.mixed-gallery .bg-image-photography {
+    border: 2px solid white;}
+
+a.bg-image-photography {
+    display: block;}
+
+.mixed-gallery .portrait {
+    padding-bottom: 135%;}
+
+.mixed-gallery .bg-image-photography {
+    border: 2px solid white;}
+
+.mixed-gallery .tall-portrait {
+    padding-bottom: 153.5%;}
+
+.mixed-gallery .portrait {
+    padding-bottom: 135%;}
+
+.bg-image-photography {
+    background-size: cover;
+    background-position: center;
+    background-color: #f2eee9;
+    background-repeat: no-repeat;  }
+
+.project-gallery a {
+    display: block;}
+
+.one-half {
+    padding-bottom: 115%;}
+
+.col-one-third {
+    flex-basis: 33.33%;
+    max-width: 33.33333%;  }
+
+.one-third { padding-bottom: 123%;  }
+
+.col-full-width {
+    flex-basis: 100%;
+    max-width: 100%;}
+
+.full-width {  padding-bottom: 60%;    }
+
+.col-two-thirds {
+    flex-basis: 66.66%;
+    max-width: 66.66%;}
+
+.two-thirds {  padding-bottom: 60%;}
+.video-main {padding-bottom: 60%;}
+
+.col-one-third {
+    flex-basis: 33.33%;
+    max-width: 33.33333%;}
+
+.one-third {padding-bottom: 123%;}
+
+.col-one-half {
+    flex-basis: 50%;
+    max-width: 50%;}
+
+.square {padding-bottom: 100%;}
+
+/* pop-up gallery */
+.popup-gallery .bg-image {
+  border: 2px solid white;
+}
+
+
+/* Masonry Gallery */
+
+.masonry { /* Masonry container */
+  column-count: 3;
+  column-gap: 1rem;
+}
+
+.masonry .item { /* Masonry bricks or child elements */
+  background-color: #eee;
+  display: inline-block;
+  margin-bottom: 1rem;
+  width: 100%;
+}
+
+@media(max-width:767px) {
+  .masonry {
+    column-count: 2;
+  }
+}
+
+@media(max-width:567px) {
+  .masonry {
+    column-count: 1;
+  }
+}
+
+/* pricing cards  */
+
+.card.featured {
+  border: 2px solid 2d1f14;
+}
+
+.pricing-name {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: rgb(120,120,125);
+}
+
+.card .button {
+  margin-top:2rem;
+}
+
+/* Responsive video */
+.embed-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+  max-width: 100%;
+}
+
+.embed-container.vertical {
+  padding-bottom: 162.25%;
+}
+
+.embed-container iframe,
+.embed-container object,
+.embed-container embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* Accordian slides */
+.accordion{
+ border: solid 1px  #766c5b;
+ margin: 1%;}
+
+ .accordion p {
+   margin: 0% 1% 1% 1%;
+   padding: 1%;
+   border-left: 2px solid #c1b9ac;}
+
+ .accordion:hover{
+   transform: scale(1.1);
+   cursor: pointer;
+   transition: all 0.5s;}
+
+  .plus h4 {
+    line-height: 1;
+    padding: 2%;
+    font-size: 1.3rem;
+    font-weight: 200;
+    cursor: pointer;}
+
+ .plus h4:hover {  text-shadow: 4px 4px 5px rgba(0,0,0,0.5);
+   transition: all 0.5s;}
+
+
+ .plus h4::before {
+   content: "＋";
+   font-size: 1.2rem;
+
+ }
+ .active h4::before {
+   content: "－";
+   -webkit-transition: all .5s;
+   -o-transition: all .5s;
+   transition: all .5s;
+   font-size: 1.2rem;
+   transition: all 0.5s ease-in;
+ }
+
+
+.accordion1, .accordion2, .accordion3, .accordion4, .accordion5, .accordion6, .accordion7, .accordion8 p {color: rgb(90, 90, 95);}
+
+/* Accordian slides */
+.panel1, .panel2, .panel3, .panel4, .panel5, .panel6, .panel7, .panel8 {display: none;}
+
+
+.panel1, .panel2, .panel3, .panel4, .panel5, .panel6, .panel7, .panel8 p {
+  padding: 0% 1%;
+  font-size: 0.8rem;
+}
+
+
+
+
+@media(min-width:769px){
+  .desktop-hide {display: none;}
+}
+/* This media query kicks into action at the gridlex sm breakpoint */
+@media(max-width:768px) {
+
+  .banner, .banner2, .banner3 {min-height: 90vh;}
+
+  .mob-hide {
+    display: none;
+    }
+
+  .hamburger {
+    display: block;
+    font-size: 2rem;
+    color: white;
+  }
+
+  .cross {
+    top:0;
+    right:0;
+    z-index: 10;
+    font-size: 0.9rem;
+    padding:0% 1%;
+    border-radius: 0%;
+    margin: 6%;
+    position: fixed;
+    font-weight: bold;
+    color: black;
+  }
+
+  h1 {font-size: 2rem;}
+  h3 {font-size: 1.4rem;}
+  h4 {font-size: 1.2rem;}
+  h5 {font-size: 1.1rem;}
+  .web-dev h1 {font-size: 1.8rem;}
+  .services {
+    padding: 0% 3% 0% 3%;
+    font-size: 0.9rem;}
+
+  .sm-bold { font-size: 2rem;}
+
+  .bold1 {
+    font-size: 6rem;
+    font-weight: 200;
+    margin-bottom: 0.8rem;}
+
+  .price{
+    text-align: center;
+    font-size: 1.2rem;}
+
+  .bird {font-size: 1.6rem;}
+
+  .dates {font-size: 1rem;}
+
+  .small-font{ font-size: 0.8rem}
+
+  .margin-neg {margin-bottom: -0.5%;}
+
+  .centered-paragraphs {text-align: center;}
+
+  .padded-top {  padding-top: 5%;  }
+  .padded-bottom {padding-bottom: 2%;}
+  .padded-1 {padding: 0.7rem;}
+
+
+  .border-grey {
+    border: 1px solid grey;
+    padding: 2rem 1rem 2rem 1rem;}
+
+  .border {border: solid white 5px;}
+
+  .border-top-right-bottom {
+    border-top: solid white 5px;
+    border-right: solid white 5px;
+    border-bottom: solid white 5px;
+                }
+
+  .button, .button-solid, .button-inverted {
+    text-decoration: none;
+    color: white;
+    border: 1px solid #c1b9ac;
+    padding: 0.5rem 1rem;
+    margin-top: 1rem;
+    display: inline-block;
+    text-transform: uppercase;
+    font-size: 0.7rem;
+    background-color: #c1b9ac;
+      }
+
+  .arrow {
+    font-size: 1rem;
+    line-height: 1.3rem;
+    min-width: 2.5rem;
+    padding: 0.5rem;
+
+    }
+
+  .vertical {
+    top: 18rem;
+    }
+
+  .input-text {
+    font-size: 1rem;
+    line-height: 1;
+    padding: .5rem 0 .5rem;
+    }
+
+
+  .vertical-form-text {
+    transform: translateX(-50%) translateY(-50%) rotate(-90deg);
+    font-size: 2rem;
+    position: absolute;
+    white-space: nowrap;
+    top: 9rem;
+    left: -2rem;
+    }
+
+
+  .service-banner {  margin-bottom: -3rem;}
+
+  .video-main {padding: 30%;}
+
+
+  .capped-width {
+    width: 100%;
+  }
+  .flex-flip{
+    flex-direction: row;
+  }
+}
+/* end media query */
+
+
+/* This media query kicks into action at the gridlex xs breakpoint */
+@media(max-width:576px){
+
+  p {font-size: 0.9rem;}
+
+  .mob-hide {
+    display: none;
+    }
+
+  h1 {font-size: 1.5rem;}
+  h2 {font-size: 1.2rem;}
+  h3 {font-size: 1.2rem;}
+  h4 {font-size: 1.1rem;}
+
+
+  .small-font{ font-size: 0.7rem}
+  .web-dev h1 {font-size: 1.1rem;}
+
+  .services {
+    padding: 0% 1.6% 0% 1.6%;
+    font-size: 0.6rem;}
+
+  .padded-top {  padding-top: 5%;  }
+  .padded-bottom {padding-bottom: 2%;}
+  .padded-2 {padding: 1rem 2rem 1rem 2rem;}
+  .padded-1 {padding: 0.4rem;}
+  .padded-top-left-bottom {padding: 0%;}
+  .margin-neg {margin-bottom: -1%;}
+
+
+  .border-grey {
+    border: 1px solid grey;
+    padding: 1rem 1rem 1rem 1rem;}
+
+  .border {border: solid white 2.5px;}
+
+  .border-top-right-bottom {
+    border-top: solid white 2.5px;
+    border-right: solid white 2.5px;
+    border-bottom: solid white 2.5px;
+      }
+
+  .banner-social {
+      background-size: cover;
+      background-position: center;
+      min-height: 0vh;}
+
+  .button, .button-solid, .button-inverted {
+    text-decoration: none;
+    color: white;
+    border: 1px solid #c1b9ac;
+    padding: 0.5rem 1rem;
+    margin-top: 1rem;
+    display: inline-block;
+    text-transform: uppercase;
+    font-size: 0.7rem;
+    background-color: #c1b9ac; }
+
+  .service-banner {  margin-bottom: 0.2rem;}
+
+  .video-main {
+    background-size: cover;
+    padding-bottom: 50%;}
+
+  .arrow {
+    font-size: 1rem;
+    line-height: 1.3rem;
+    min-width: 2.5rem;
+    padding: 0.5rem;
+
+  }
+
+  .small-centered{
+    text-align: center;
+    font-size: 0.9rem;
+    }
+
+
+  .vertical {
+    top: 34rem;
+    left: 10.5rem;
+  }
+
+  .vertical-form-text {
+    font-size: 1.5rem;
+    left: -1rem;}
+
+  .input-text {
+    font-size: 0.8rem;}
+
+  .bold {
+    font-size: 5rem;}
+
+ .footer-nav {
+   font-size: 0.6rem;
+   padding: 0% 5% 0% 5%;
+}
+
+ .sub-footer {
+   font-size: 0.7rem;
+   border-top: solid 1px;
+  padding-top: 1rem;}
+}
+
+@media(max-width:375px) {
+
+}
+
+
+/* end media query */
