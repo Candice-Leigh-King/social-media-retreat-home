@@ -28,6 +28,8 @@
     margin-bottom: -0.6%;
   }
 
+  .img-50 img {max-width: 50%;}
+
 
    /* this overrides the default padding and margin on gridlex elements */
   [class*=grid] {   margin: 0;  }
@@ -57,11 +59,12 @@
   .padded-left { padding: 0% 5% 0% 0%;}
   .padded-top-left-bottom {padding: 5% 0% 5% 5%;}
   .padded-bottom {padding-bottom: 5%;}
-  .padded-top {padding-top: 6%;}
+  .padded-top {padding-top: 5%;}
   .padded-top-2 {padding-top: 3%;}
-  .padded-top-left-right {padding: 5% 5% 0% 5%}
+  .padded-top-left-right {padding: 5% 5% 0% 5%;}
   .padded-t-0 {padding-top: 0;}
   .padded-50 {padding: 48%;}
+  .padded-unique {padding: 2.5%;}
 
   .margin-sides {margin: 0% 5%;}
 
@@ -102,7 +105,6 @@
     line-height: 1.5;
     margin-bottom: 0.8rem;
     font-weight: 100;
-    text-transform: lowercase;
   }
 
     h2, h3 {
@@ -424,12 +426,12 @@
   }
 
   /* Hamburger Menu */
-  .hamburger,
+  .hamburger span,
   .mobile-menu {
     display: none;
   }
 
-  .hamburger {
+  /* .hamburger {
     top:0;
     right:0;
     z-index: 10;
@@ -439,7 +441,47 @@
     margin: 3%;
     position: fixed;
 
+  } */
+
+  .hamburger {
+    display: block;
+    position: fixed;
+    top: 2.5rem;
+    right: 7vh;
+    z-index: 12;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-mix-blend-mode: overlay;
+    -moz-mix-blend-mode: overlay;
+    mix-blend-mode: overlay;
   }
+
+    .hamburger span {
+    display: block;
+    width: 30px;
+    height: 3px;
+    margin-bottom: 5px;
+    position: relative;
+    border-radius: 3px;
+    background: #766c5c;
+    transform-origin: 4px 0;
+    transition: transform 1s;
+  }
+
+  .hamburger:hover span:first-child {transform: rotate(45deg) translate(-2px,-1px);}
+  .hamburger span:first-child {transform-origin: 0 0;}
+
+  .hamburger:hover span:nth-child(2) {
+    opacity: 0;
+    transform: rotate(0) scale(.2,.2);
+  }
+
+  .hamburger:hover span:nth-child(3) {transform: rotate(-45deg) translate(-1px,-1px);
+  }
+
+  .hamburger span:last-child {  transform-origin: 0 40%;}
 
   .active {
     color: #2d1f14;
@@ -460,7 +502,7 @@
     bottom: 0;
     background: linear-gradient(25deg,rgba(255,255,255,.9) 50%,rgba(217,213,204,.9) 50%);
     padding: 30% 10% 10% 10%;
-    z-index: 10;
+    z-index: 1;
   }
   .mobile-menu .grow {
     color: rgb(120,120,125);
@@ -636,7 +678,8 @@
 
   select {
     border: none;
-    padding: 0.8em;
+    padding-top: 0.8em;
+    padding-bottom: 0.8em;
     display: block;
     width: 100%;
     font-size: 1rem;
@@ -651,8 +694,17 @@
      width:100%;
      font-family: 'Noto Sans HK', sans-serif;
      background-color: white;
+     color: #c1b9ac;
    }
 
+.plus h4 {
+   line-height: 1;
+   padding: 2%;
+   font-size: 1.2rem;
+   font-weight: 200;
+   cursor: pointer;
+   margin: 0%;
+ }
 
  .plus h4::before {
    content: "＋";
@@ -680,6 +732,21 @@
   font-size: 0.8rem;
 }
 
+.accordion:hover {
+    transform: scale(1.03);
+    cursor: pointer;
+    transition: all .5s;
+}
+
+.accordion {
+    border: solid 1px #766c5b;
+    margin: 1%;}
+
+.accordion p {
+  margin: 0 1% 1% 1%;
+  padding: 1%;
+  border-left: 2px solid #c1b9ac;}
+
 
 
 
@@ -702,11 +769,11 @@
     display: none;
     }
 
-  .hamburger {
+  /* .hamburger {
     display: block;
     font-size: 2rem;
     color: white;
-  }
+  } */
 
   .cross {
     top:0;
@@ -725,10 +792,19 @@
   h3 {font-size: 1.4rem;}
   h4 {font-size: 1.2rem;}
   h5 {font-size: 1.1rem;}
-  .web-dev h1 {font-size: 1.8rem;}
-  .services {
-    padding: 0% 3% 0% 3%;
-    font-size: 0.9rem;}
+
+
+  .plus h4 { font-size: 1rem; }
+
+   .plus h4::before {
+     content: "＋";
+     font-size: 1rem;
+
+   }
+   .active h4::before {
+     content: "－";
+     font-size: 1rem;
+   }
 
   .sm-bold { font-size: 2rem;}
 
@@ -849,6 +925,8 @@
 
   .input-text {
     font-size: 0.8rem;}
+
+  select { font-size: 0.8rem;}
 
 
  .sub-footer {
