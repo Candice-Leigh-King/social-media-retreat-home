@@ -221,12 +221,14 @@
 
 
 
-
+  .windows {margin: 5% 0%;}
   .card img {max-width: 50%; }
 
-  .cover {
+  .cover
+    {
     background-position: center;
-    background-size: cover;}
+    background-size: cover;
+    }
 
   .signup {
     padding: 10%;
