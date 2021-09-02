@@ -693,6 +693,8 @@
     background-color: rgba(0,0,0,0);
 }
 
+select:hover {border:none;}
+
    form .button {
      width:100%;
      font-family: 'Noto Sans HK', sans-serif;
