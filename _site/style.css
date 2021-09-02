@@ -456,9 +456,9 @@
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
-    -webkit-mix-blend-mode: overlay;
-    -moz-mix-blend-mode: overlay;
-    mix-blend-mode: overlay;
+    -webkit-mix-blend-mode: color-dodge;
+    -moz-mix-blend-mode: color-dodge;
+    mix-blend-mode: color-dodge;
   }
 
     .hamburger span {
