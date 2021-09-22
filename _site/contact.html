@@ -21,14 +21,14 @@
     <meta property="og:title" content="">
     <meta property="og:description" content="Are you ready to finally make a living doing what you love? Permanently free yourself from slaving away in the 9-5 grind and start your new career in a destination you've only dreamt about!">
     <meta property="og:image" content="/images/video.jpeg">
-    <meta property="og:url" content="/success.html">
+    <meta property="og:url" content="/contact.html">
     <meta name="twitter:card" content="Are you ready to finally make a living doing what you love? Permanently free yourself from slaving away in the 9-5 grind and start your new career in a destination you've only dreamt about!">
     <meta name="og:site_name" content="The Social Media Retreat">
 
     <!-- twitter card -->
     <meta name="twitter:card" content="" />
     <meta name="twitter:description" content="Make a living doing what you love at a social media bootcamp" />
-    <meta name="twitter:title" content="Social Media Retreat" />
+    <meta name="twitter:title" content="Social Media Retreat | Contact" />
     <meta name="twitter:site" content="socialmediaretreat.org" />
     <meta name="twitter:image" content="/images/video.jpeg" />
     <meta name="twitter:creator" content="The Social Media Retreat" />
@@ -114,11 +114,54 @@
     </div>
   </header>
 
-    <section class="grid-center padded reg">
-  <h3 class="success padded-top centered col-12"> Success!</h3>
-  <p class="sent col-6-center_sm-12 centered our-benefits"> Your form was successfully sent. Someone from our team will be in contact with you shortly. Until then, check out <a href="/itinerary">the itinerary</a> for the trip, if you haven't done so already.</p>
+    <!-- form -->
+  <section class="padded-10 light-bg ">
 
-</section>
+    <form method="post" action="/success.html" class="enquiry light-bg capped-width">
+
+      <div class="grid-center padded">
+      <div class="col-12 centered">
+        <h2 class="sm-bold"> basic info </h2>
+      </div>
+
+      <div class="col-10_sm-12 padded-2">
+        <div class="floating-input">
+          <input type="text" name="name" placeholder="Your Name" class="input-text" required="">
+          <label class="input-label">Your Name</label>
+        </div>
+
+        <div class="floating-input">
+          <input type="text" name="email" placeholder="Your Email Address" class="input-text" required="">
+          <label class="input-label">Your Email Address</label>
+        </div>
+
+        <div class="floating-input">
+          <input type="text" name="whatsapp" placeholder="Your WhatsApp (if preferred)" class="input-text">
+          <label class="input-label">Your WhatsApp</label>
+        </div>
+        <div class="floating-input">
+          <input type="text" name="IG" placeholder="Your IG handle" class="input-text">
+          <label class="input-label">Your IG handle</label>
+        </div>
+
+      </div>
+    </div>
+    <div class="grid-center padded">
+
+      <div class="col-12 centered">
+        <h2 class="sm-bold"> message </h2>
+      </div>
+
+      <div class="col-10_sm-12 padded-2">
+        <div class="floating-input">
+          <textarea name="your-brand" placeholder="What'sup? Let us know your question or what you need. " class="input-text" required=""></textarea>
+          <label class="input-label">What'sup? Let us know your question or what you need. </label>
+        </div>
+        <input type="hidden" name="_to" value="socialmediaretreat@gmail.com">
+        <input type="text" name="_gotcha" style="display: none;">
+      <input type="submit" value="Send Message" class="button-solid">
+  </form>
+  </section>
 
 
 <footer class="grid center bg-footer">
