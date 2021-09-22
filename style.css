@@ -775,11 +775,14 @@ select:hover {border:none;}
     display: none;
     }
 
-  /* .hamburger {
-    display: block;
-    font-size: 2rem;
-    color: white;
-  } */
+    .hamburger {
+      display: block;
+      font-size: 2rem;
+      color: white;
+      top: 1.5rem;
+      right: 3vh;
+    }
+
 
   .cross {
     top:0;
